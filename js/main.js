@@ -217,7 +217,7 @@
 
 
 		function getTimeRemaining(wedTime) {
-			var wedTime = "February 27 2022 11:30:00 GMT+0300";
+			var wedTime = "February 28 2022 0:00:00 GMT+05:30";
 			var t = Date.parse(wedTime) - Date.parse(new Date());
 			// November 28 2022 17:30:00 GMT+0300
 			// var t = Date.parse(endtime) - Date.parse(new Date('02/27/2022 11:30 AM'));
