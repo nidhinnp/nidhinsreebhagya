@@ -215,8 +215,12 @@
 	var countdown = function() {
 		var countdown = document.querySelector('.countdown');
 
-		function getTimeRemaining(endtime) {
-			var t = Date.parse(endtime) - Date.parse(new Date());
+
+		function getTimeRemaining(wedTime) {
+			var wedTime = "February 27 2022 11:30:00 GMT+0300";
+			var t = Date.parse(wedTime) - Date.parse(new Date());
+			// November 28 2022 17:30:00 GMT+0300
+			// var t = Date.parse(endtime) - Date.parse(new Date('02/27/2022 11:30 AM'));
 			var seconds = Math.floor((t / 1000) % 60);
 			var minutes = Math.floor((t / 1000 / 60) % 60);
 			var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
@@ -230,7 +234,7 @@
 			};
 		}
 
-		function initializeClock(id, endtime) {
+		function initializeClock(id, wedTime) {
 			var clock = document.getElementById(id);
 			var daysSpan = clock.querySelector('.days');
 			var hoursSpan = clock.querySelector('.hours');
@@ -239,7 +243,7 @@
 			var newChild;
 
 			function updateClock() {
-				var t = getTimeRemaining(endtime);
+				var t = getTimeRemaining(wedTime);
 				var daysArr = String(t.days).split('');
 				daysSpan.innerHTML = '';
 				for (var i = 0; i < daysArr.length; i++){
