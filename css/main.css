@@ -769,12 +769,57 @@ img {
 		margin-bottom: 0;
 		max-height: inherit;
 	}
+
 }
 @media only screen and (min-width: 992px) {
 	.events-accordion #accordion-img {
 		max-height: 485px;
 	}
 }
+
+@media only screen and (max-width: 992px) {
+	.footer-image{
+		padding: 10em 0 3em;
+		background-image: url(../img/footr.jpg);
+	}
+	.banner_bottom {
+		padding: 10em 0 3em;
+		background-image: url(../img/footr.jpg);
+	}
+	.map{
+		border: 0px;
+		height: 200px;
+		width: 100%;
+	}
+	.map-div{
+		height: 200px;
+		width: auto;
+		margin-bottom: 50px;
+		margin-top: 50px;
+
+	}
+
+}
+
+@media only screen and (min-width: 992px) {
+
+	.banner_bottom {
+		padding: 10em 0 3em;
+		background-image: url(../img/foot.jpg);
+	}
+	.map-div{
+		height: 790px;
+		width: auto;
+
+	}
+	.map{
+		border: 0px;
+		height: 100%;
+		width: 100%;
+	}
+
+}
+
 .events-accordion .panel-default,
 .events-accordion .panel-default > .panel-heading,
 .events-accordion .panel-group .panel-heading + .panel-collapse > .list-group,
@@ -899,6 +944,8 @@ img {
 		top: 81px;
 	}
 }
+
+
 .timeline .timeline-item:nth-child(2n) .timeline-panel {
 	float: right;
 }
@@ -1273,10 +1320,7 @@ img {
 .banner_top {
 	background-image: url(../img/header-bg.jpg);
 }
-.banner_bottom {
-	padding: 10em 0 3em;
-	background-image: url(../img/foot.jpg);
-}
+
 .banner_bottom h2 {
 	margin: 0;
 	font-size: 60px;
